@@ -1,0 +1,55 @@
+module testsng;
+
+	// Inputs
+	reg clk;
+	reg clr;
+	reg ld;
+	reg [3:0] b;
+	reg [3:0] seed;
+
+	// Outputs
+	wire [15:0] sn;
+	wire done;
+	wire [3:0] w;
+
+	// Instantiate the Unit Under Test (UUT)
+	sng uut (
+		.clk(clk), 
+		.clr(clr), 
+		.ld(ld), 
+		.b(b), 
+		.seed(seed), 
+		.sn(sn), 
+		.done(done), 
+		.w(w)
+
+	);
+	
+	initial clk=1'b0;
+	always #50 clk=~clk;
+
+	initial begin
+
+		clr = 1;
+		#5;
+		clr=0;
+		ld = 0;
+		b = 9;
+		seed = 5;
+		#5;
+		ld=1;
+		
+		clr=0;
+      #5
+		ld=0;
+		// Wait 100 ns for global reset to finish
+		#1000;
+        
+		#100;
+        
+		  
+		// Add stimulus here
+
+	end
+      
+endmodule
