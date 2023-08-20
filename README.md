@@ -36,8 +36,8 @@ To get started with this project, follow these steps:
 
 ## Acknowledgments
 
-We would like to express our gratitude to [Shyamali Mitra] for their guidance and support throughout this project.
+We would like to express our gratitude to Shyamali Mitra for their guidance and support throughout this project.
 
 ---
 
-*Note:* This project was developed as part of [Hardware Modelling using Verilog] at [Jadavpur University].
+*Note:* This project was developed as part of Hardware Modelling using Verilog at Jadavpur University.
